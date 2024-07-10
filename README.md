@@ -13,9 +13,9 @@ Para iniciar o frontend
 Para iniciar o backend:
 - Entre na pasta backend;
 - Abra um terminal para rodar o docker do bando de dados com os seguintes comandos:
-   - docker build -t mssql-custom-senai .
-   - docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=!Passw0rd' -p 1433:1433 --name sql1 -d mssql-custom
+   - `docker build -t mssql-custom-senai .`
+   - `docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=!Passw0rd' -p 1433:1433 --name sql1 -d mssql-custom`
 - Abra um novo terminal para executar a api com os seguintes comandos:
-   - ./mvnw install
-   - ./mvnw spring-boot:run  
+   - `./mvnw install`
+   - `./mvnw spring-boot:run` 
   
