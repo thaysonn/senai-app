@@ -16,6 +16,6 @@ Para iniciar o backend:
    - `docker build -t mssql-custom-senai .`
    - `docker run -e 'ACCEPT_EULA=Y' -e 'MSSQL_SA_PASSWORD=!Passw0rd' -p 1433:1433 --name sql1 -d mssql-custom`
 - Abra um novo terminal para executar a api com os seguintes comandos:
-   - `./mvnw install`
+   - `./mvnw clean install`
    - `./mvnw spring-boot:run` 
   
