@@ -1,5 +1,5 @@
 
-##Passos para executar o projeto
+## Passos para executar o projeto
 
 Para baixar o projeto:
 git clone https://github.com/thaysonn/senai-app.git
