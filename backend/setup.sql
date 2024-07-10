@@ -1,3 +1,2 @@
-
-CREATE DATABASE HelloWorld;
+CREATE DATABASE senaiDB;
 GO
