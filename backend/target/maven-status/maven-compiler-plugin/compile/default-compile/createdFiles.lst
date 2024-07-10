@@ -1,0 +1,9 @@
+com\example\demo\DemoApplication.class
+com\example\demo\controller\InscricoesController.class
+com\example\demo\model\Inscricoes.class
+com\example\demo\service\UserService.class
+com\example\demo\controller\UserController.class
+com\example\demo\service\InscricoesService.class
+com\example\demo\model\User.class
+com\example\demo\repository\InscricoesRepository.class
+com\example\demo\repository\UserRepository.class

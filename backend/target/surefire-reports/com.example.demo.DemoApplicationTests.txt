@@ -1,0 +1,22 @@
+-------------------------------------------------------------------------------
+Test set: com.example.demo.DemoApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 25.045 s <<< FAILURE! - in com.example.demo.DemoApplicationTests
+contextLoads  Time elapsed: 0.002 s  <<< ERROR!
+java.lang.IllegalStateException: Failed to load ApplicationContext
+Caused by: org.springframework.beans.factory.BeanCreationException: 
+Error creating bean with name 'flywayInitializer' defined in class path resource [org/springframework/boot/autoconfigure/flyway/FlywayAutoConfiguration$FlywayConfiguration.class]: Invocation of init method failed; nested exception is org.flywaydb.core.internal.exception.FlywaySqlException: Unable to obtain connection from database: Cannot open database "senaiDB" requested by the login. The login failed. ClientConnectionId:114574bc-43ea-4415-8061-90c02b3f457a
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : S0001
+Error Code : 4060
+Message    : Cannot open database "senaiDB" requested by the login. The login failed. ClientConnectionId:114574bc-43ea-4415-8061-90c02b3f457a
+
+Caused by: org.flywaydb.core.internal.exception.FlywaySqlException: 
+Unable to obtain connection from database: Cannot open database "senaiDB" requested by the login. The login failed. ClientConnectionId:114574bc-43ea-4415-8061-90c02b3f457a
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+SQL State  : S0001
+Error Code : 4060
+Message    : Cannot open database "senaiDB" requested by the login. The login failed. ClientConnectionId:114574bc-43ea-4415-8061-90c02b3f457a
+
+Caused by: com.microsoft.sqlserver.jdbc.SQLServerException: Cannot open database "senaiDB" requested by the login. The login failed. ClientConnectionId:114574bc-43ea-4415-8061-90c02b3f457a
+
