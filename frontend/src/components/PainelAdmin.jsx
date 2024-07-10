@@ -16,6 +16,7 @@ import {
 import inscricaoService from "../services/inscricaoService";
 import { useFormik } from "formik";
 import * as Yup from "yup";
+import { Height } from "@mui/icons-material";
 
 const PainelAdmin = ({ setShowAdmin }) => {
   const style = {
@@ -134,8 +135,8 @@ const PainelAdmin = ({ setShowAdmin }) => {
             ADICIONAR UMA INSCRIÇÃO
           </Button>
         </div>
-        <TableContainer component={Paper}>
-          <Table>
+        <TableContainer component={Paper} > 
+          <Table className="tbinscricao" >
             <TableHead>
               <TableRow>
                 <TableCell>Data</TableCell>
@@ -148,7 +149,8 @@ const PainelAdmin = ({ setShowAdmin }) => {
               </TableRow>
             </TableHead>
             <TableBody>
-              {data.map((item) => (
+            {data.length > 0 ? (
+              data.map((item) => (
                 <TableRow key={item.id}>
                   <TableCell>{item.data}</TableCell>
                   <TableCell>{item.nome}</TableCell>
@@ -174,7 +176,13 @@ const PainelAdmin = ({ setShowAdmin }) => {
                     </Button>
                   </TableCell>
                 </TableRow>
-              ))}
+              ))) : (
+                <TableRow>
+                  <TableCell colSpan={7} align="center">
+                    <strong>Nenhum item encontrado</strong>
+                  </TableCell>
+                </TableRow>
+              )}
             </TableBody>
           </Table>
         </TableContainer>

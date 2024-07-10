@@ -41,7 +41,7 @@ const Header = ({ setShowAdmin, showAdmin }) => {
         </div>
       </div>
       <div className="navbar">
-        <Button variant="contained" color="primary" style={{ width: "235px" }}>
+        <Button variant="contained" color="primary" style={{ width: "235px" }} >
           Sobre o Projeto
         </Button>
         <Button variant="contained" color="primary" style={{ width: "235px" }}>

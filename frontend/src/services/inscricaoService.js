@@ -1,22 +1,24 @@
 import axios from 'axios';
+ 
+import API_URL from '../config'; // Caminho para o seu arquivo de configuração
 
-const API_URL = 'http://localhost:8080/inscricoes'; // URL base da sua API
+const apiBase = API_URL + 'inscricoes';
 
-class InscricaoService {
+class InscricaoService { 
     getAllInscricoes() {
-        return axios.get(API_URL);
+        return axios.get(apiBase);
     }
 
     createInscricao(inscricao) {
-        return axios.post(API_URL, inscricao);
+        return axios.post(apiBase, inscricao);
     }
 
     updateInscricao(id, inscricao) {
-        return axios.put(`${API_URL}/${id}`, inscricao);
+        return axios.put(`${apiBase}/${id}`, inscricao);
     }
 
     deleteInscricao(id) {
-        return axios.delete(`${API_URL}/${id}`);
+        return axios.delete(`${apiBase}/${id}`);
     }
 }
 
